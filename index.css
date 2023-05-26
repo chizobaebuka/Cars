@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    position: relative;
+    flex-wrap: wrap;
+
+    /* @media screen and (max-width: 500px) {
+        flex-direction: column;
+    } */
+}
+div{
+    width: 307px;
+    height: 500px;
+    padding: 30px;
+
+    @media screen and (max-width: 500px) {
+        height: 442px;
+        width: 327px;
+        padding: 35px;
+    }
+}
+section div:first-child{
+    /* position: absolute; */
+    width: 920px;
+    height: 500px;
+    background: #E28625;
+    border-radius: 8px;
+
+    @media screen and (max-width: 500px) {
+        height: 1326px;
+        width: 327px;
+    }
+}
+section div:nth-child(2){
+    width: 307px;
+    height: 500px;
+    background: #005971;
+    border-radius: 8px;
+    position: absolute;
+
+    @media screen and (max-width: 500px) {
+        top: 443px;
+    }
+}
+section div:nth-child(3){
+    width: 307px;
+    height: 500px;
+    background: #004140;
+    border-radius: 0px 8px 8px 0px;
+    position: absolute;
+    left: 874px;
+
+    @media screen and (max-width: 500px) {
+        left: 30px;
+        top: 920px;
+        border: 0px 0px 8px 8px;
+    }
+}
+h2{
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #F2F2F2;
+    margin: 20px auto;
+}
+p{
+    width: 212px;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    opacity: 0.75;
+
+    @media screen and (max-width: 500px) {
+        width: 231px
+    }
+}
+button{
+    background: #F2F2F2;
+    border-radius: 25px;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    width: 146px;
+    height: 48px;
+    cursor: pointer;
+    border: 0;
+    position: absolute;
+    bottom: 40px;
+}
+#btn1{
+    color: #E28625;
+
+    @media screen and (max-width: 500px) {
+        position: relative;
+        margin-top: 80px;
+    }
+}
+#btn2{
+    color: #006971;
+}
+#btn3{
+    color:  #004140;
+}
+button:active,
+button:focus,
+button:hover{
+    border: 2px solid #ffffff;
+    color: #ffffff !important;
+    background-color: transparent;
+}
+
